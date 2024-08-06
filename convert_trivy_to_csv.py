@@ -1,6 +1,6 @@
 """_summary_
 
-    convert_trivy.py
+    convert_trivy_to_csv.py
     ================
     
     This script formats the output of a trivy scan which used the command below,
@@ -10,7 +10,7 @@
         `trivy image --input <image:tag|filename.tar> > trivy-results.txt`
         
     Example:
-        python convert_trivy.py --input input.txt --output output.csv
+        python convert_trivy_to_csv.py --input input.txt --output output.csv
         
 """
 
@@ -129,7 +129,7 @@ def parse_arguments():
 def main():
     """
         Example:
-            python convert_trivy.py --input input.txt -o output.txt
+            python convert_trivy_to_csv.py --input input.txt -o output.txt
     """
     args = parse_arguments()
     lines = read_file(args.input)
