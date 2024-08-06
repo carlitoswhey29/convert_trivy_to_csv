@@ -1,5 +1,4 @@
 # convert_trivy_to_csv
----
 
 Author: Carlos Aguilar
 
